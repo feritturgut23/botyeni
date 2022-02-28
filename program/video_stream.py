@@ -211,10 +211,7 @@ async def vplay(c: Client, m: Message):
     chat_id = m.chat.id
     user_id = m.from_user.id
     if m.sender_chat:
-        return await m.reply_text(
-            "sen bir Anonim kullanıcısısın !\n\n» 
-Bu botu kullanmak için gerçek kullanıcı hesabınıza geri dönün."
-        )
+        return await m.reply_text("sen bir Anonim kullanıcısısın !\n\n» Bu botu kullanmak için gerçek kullanıcı hesabınıza geri dönün.")
     try:
         ubot = me_user.id
         b = await c.get_chat_member(chat_id, ubot)
