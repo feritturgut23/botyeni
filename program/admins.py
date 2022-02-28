@@ -324,8 +324,7 @@ async def cbunmute(_, query: CallbackQuery):
                 return
             await calls.unmute_stream(chat_id)
             await music_on(chat_id)
-            await query.answer("🔊 
-Kullanıcı robotunun sesini açtıktan sonra !\n\n» kullanıcı robotunun sesini kapatmak için sessiz düğmesini tıklayın !", show_alert=True)
+            await query.answer("🔊 Kullanıcı robotunun sesini açtıktan sonra !\n\n» kullanıcı robotunun sesini kapatmak için sessiz düğmesini tıklayın !", show_alert=True)
         except Exception as e:
             traceback.print_exc()
             await query.edit_message_text(f"🚫 **error:**\n\n`{e}`", reply_markup=close_mark)
