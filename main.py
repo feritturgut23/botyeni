@@ -16,5 +16,5 @@ async def start_bot():
     LOGS.info("[INFO]: BOT & USERBOT STOPPED !!")
     await bot.stop()
 
-loop =asyncio.get_event_loop()
+loop = asyncio.get_event_loop()
 loop.run_until_complete(start_bot())
