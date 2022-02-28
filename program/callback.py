@@ -143,7 +143,7 @@ All commands can be used with (`! / .`) handler""",
                 [
                     InlineKeyboardButton("👮🏻‍♀️ Admin komut", callback_data="admin_command"),
                 ],[
-                    InlineKeyboardButton("👩🏻‍💼 Kullanıcı komut callback_data="user_command"),
+                    InlineKeyboardButton("👩🏻‍💼 Kullanıcı komut", callback_data="user_command"),
                 ],[
                     InlineKeyboardButton("Yetkili komut", callback_data="sudo_command"),
                     InlineKeyboardButton("Sahip komut", callback_data="owner_command"),
